@@ -1,29 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f2f2f2"
     android:orientation="vertical">
 
-    <TextView
+    <FrameLayout
+        android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:id="@+id/textView"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        android:gravity="center"/>
+        android:layout_height="700dp"
+        android:layout_above="@id/bottomNavigationView" />
 
-    <Spinner
-        android:id="@+id/Area_spinner"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"/>
-
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/map_fragment"
-        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:name="com.naver.maps.map.MapFragment" />
-
+        android:layout_gravity="bottom"
+        android:background="@drawable/radius_bg"
+        android:elevation="15dp"
+        style="@style/BottomNavigationViewNoRipple"
+        app:itemIconSize="40dp"
+        app:itemIconTint="@drawable/bottom_bar"
+        app:itemTextColor="@color/travel_red"
+        app:itemRippleColor="@color/travel_red"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_bar" />
 </LinearLayout>

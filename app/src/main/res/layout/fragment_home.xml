@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="TRAVELIP"
+            android:fontFamily="@font/arial"
+            android:textColor="@color/travel_red"
+            android:textSize="35dp"/>
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/menu_bg"
+            app:iconifiedByDefault="false"
+            app:queryBackground="@null"
+            android:elevation="15dp"
+            app:queryHint="지역을 선택해주세요."/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_bg"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/menu_bg"
+        android:orientation="vertical"
+        android:elevation="15dp"
+        android:padding="40px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingLeft="6dp">
+
+            <LinearLayout
+                android:id="@+id/gallery_btn"
+                android:layout_width="60dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <android.widget.ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/img_btn"
+                    android:clipToOutline="true"
+                    android:padding="7dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/exhibition" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="전시관"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <android.widget.ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/img_btn"
+                    android:clipToOutline="true"
+                    android:padding="7dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/culture" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="문화재"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <android.widget.ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/img_btn"
+                    android:clipToOutline="true"
+                    android:padding="7dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/festival" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="축제"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <android.widget.ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/img_btn"
+                    android:clipToOutline="true"
+                    android:padding="7dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/experience" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="체험"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--        ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="6dp">
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <android.widget.ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/img_btn"
+                    android:clipToOutline="true"
+                    android:padding="7dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/activity" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="액티비티"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <android.widget.ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/img_btn"
+                    android:clipToOutline="true"
+                    android:padding="7dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mountin" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="바다/산"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <android.widget.ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/img_btn"
+                    android:clipToOutline="true"
+                    android:padding="7dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/eat" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="식당/카페"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <android.widget.ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/img_btn"
+                    android:clipToOutline="true"
+                    android:padding="7dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/park" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="공원"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:elevation="15dp"
+        android:background="@drawable/menu_bg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:text="여기에는 배너가 들어갈 예정입니다."/>
+    </LinearLayout>
+
+</LinearLayout>
